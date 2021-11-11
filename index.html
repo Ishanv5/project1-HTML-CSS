@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TRAVEL Website</title>
+    <style>
+         *{
+             margin: 0;
+             padding: 0;
+             
+             box-sizing: border-box;
+         }
+         body{
+             font-family: 'Montserrat', sans-serif;
+         }
+         ul li{
+             list-style: none;
+         }
+         a{
+             font-size: 1.6rem;
+             text-decoration: none;
+         }
+         p, li{
+             font-size: 1.6rem;
+             margin-bottom: 0.5em;
+             letter-spacing: 0.15em;
+             color: white;
+         }
+         h1,h2,h3{
+             margin-bottom: 0.5em;
+             letter-spacing: 0.15em;
+             font-weight: 500;
+             color: white;
+            
+         }
+         .container{
+             width: 1200px;
+             width: 90%;
+             margin: 0 auto;
+         }
+             .text-blue{
+                 color: blue;
+             }
+             .text-light{
+                 color: #f4f4f4;
+             }
+             .text-black{
+                 color: #333;
+             }
+             .text-gray{
+                 color: #555;
+             }
+             .btn{
+                 display: inline-block;
+                 padding: 0.5em 1.5em;
+                 font-weight: 500;
+                 text-transform: uppercase;
+                 margin: 0.5em;
+             }
+             .btn-primary{
+                 background-color: #fff;
+                 color: crimson;
+                 border-radius: 100px;
+             }
+             .btn-primary:hover{
+                 background-color: #ddd;
+             }
+         html{
+            font-size: 62.5%;
+         }
+         header{
+             position: relative;
+             height: 100vh;
+             background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/nightc.jpg');
+             background-position: center;
+             background-size: cover;
+             background-repeat: no-repeat;
+         }
+          .header .logo,
+          .header .navbar a{
+              color: white;
+          }
+          .navbar{
+              
+              padding: 1rem;
+          }
+          .header  .navbar .logo{
+              float: left;
+              font-size: 3.5rem;
+          }
+          .header .navbar .navitems{
+              float: right;
+              margin-top: 1rem;
+          }
+          .header .navbar .navitem{
+              display: inline-block;
+              padding: 1rem;
+              text-transform: uppercase;
+          }
+          .navbar a{
+              padding-bottom: 0.3rem;
+          }
+          .navbar a:hover{
+              border-bottom: 1px solid white;
+          }
+          .navbar::after{
+              content: '';
+              display: block;
+              clear: both;
+          }
+          .header-content{
+              position: absolute;
+              text-align: center;
+              
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              
+          }
+          .header-content h1{
+              text-transform: uppercase;
+              font-weight: 700;
+          }
+          .header-content p{
+              text-transform: uppercase;
+              
+          }
+          .showcase{
+              background: #ddd;
+              padding: 10rem 0;
+          }
+          .row{
+              height: 350px;
+              border: 2px solid white;
+              background: black;
+              box-shadow: 5px 5px 20px 0px #aaa;
+          }
+          .row1{
+              margin-bottom: 10rem;
+          }
+          .row1 .img-box, .row2 .text-box{
+              float: left;
+              width: 50%;
+          }
+          .row2 .img-box, .row1 .text-box{
+              float: right;
+              width: 50%;
+          }
+          .row .img-box{
+              
+              height: 100%;
+          }
+          .row .text-box{
+             
+              padding: 3rem;
+          }
+          .row .img-box img{
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+          }
+         .row::after{
+             content:'' ;
+             display: block;
+             clear: both;
+         }
+         .box-1{
+             background-color: #333;
+             padding: 5px;
+         }
+         .box-2{
+             background-color: crimson;
+             padding: 5px;
+         }
+         .box-3{
+             background-color: #333;
+             padding: 5px;
+         }
+         .feature{
+             padding: 10rem 0;
+         }
+         .box-wrapper{
+             box-shadow: 5px 5px 5px 0px #000;
+         }
+         .box{
+             width: 33.333333%;
+             float: left;
+             
+             text-align: center;
+         }
+         .box-wrapper::after{
+             content: "";
+             display: block;
+             clear: both;
+         }
+    </style>
+</head>
+<body>
+    <header class="header">
+       <nav class="navbar">
+           <div class="container">
+            <h1 class="logo">IV</h1>
+            <ul class="navitems">
+                <li class="navitem"><a href="./index.html">Home</a></li>
+                <li class="navitem"><a href="./about.html">About</a></li>
+                <li class="navitem"><a href="./contact.html">Contact</a></li>
+            </ul>
+           </div>
+          
+       </nav>
+       <div class="header-content">
+           <h1>TRAVEL THE WORLD</h1>
+           <p>Travel The World , Experience the great memories,view......... </p>
+           <a href="#explore-places" class="btn btn-primary">Explore Places</a>
+       </div>
+    </header>
+    <section class="show-case" id="explore-places">
+      <div class="container">
+          <div class="row row1">
+              <div class="img-box">
+                  <img src="./img/travel-for-free.jpg" alt="img des">
+              </div>
+              <div class="text-box">
+                  <h1> Sydney, Australia</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id voluptas libero rem ad dolorum cum voluptatum veniam vitae sit vel, eius odit? Molestiae possimus blanditiis consequatur suscipit nisi ipsa?
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto praesentium aspernatur molestias mollitia magni doloremque, incidunt quam recusandae deleniti odit velit? Facere nemo quos fuga aperiam impedit. Fugiat, harum.
+                  </p>
+                  <a href="./about.html" class="btn btn-primary">More</a>
+              </div>
+          </div>
+          <div class="row row2">
+            <div class="img-box">
+                <img src="./img/paris-eiffel-tower-sunset-GettyImages-168663421.jpg" alt="img des">
+            </div>
+            <div class="text-box">
+                <h1>Paris, UK</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat excepturi reiciendis, nam provident voluptas doloribus nesciunt ex harum sint, ipsam tempora repellat? Ut animi eaque minima, molestiae mollitia libero! Natus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, repellat. Dolore, sint possimus! Quia qui nisi maxime, quod earum repellendus est iure voluptas! Nihil dolores eligendi sed ex deserunt rerum.
+                </p>
+                <a href="./about.html" class="btn btn-primary">More</a>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="feature">
+        <div class="container">
+            <div class="box-wrapper">
+                <div class="box box-1">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                   <h1>Adventure</h1>
+                   <p>
+                    There is a very famous quote by Hellen Keller, “Life is either a daring adventure or nothing.” An adventure is something challenging, that takes us out of our ordinary lives and forces us to try new things. The definition of adventure varies from person to person. It can best be described as, “The risky undertaking of an unknown outcome, the result of which may also be dangerous or in favour.”
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum neque mollitia impedit quas tempore assumenda quis debitis dolorum quos provident porro obcaecati, culpa nemo id a fuga itaque. Nemo, sit.</p>
+                </div>
+                <div class="box box-2">
+                    <i class="fa fa-anchor" aria-hidden="true"></i>
+                    <h1>Less Price</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus numquam, molestiae velit dolorum eum maiores eveniet ipsum officia iusto? Illum veritatis error fuga officia ipsam doloribus neque voluptatem ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magnam nam vitae eius quas voluptate cum laboriosam dignissimos! Laborum, porro.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere esse iste laboriosam minus, praesentium qui ipsa nisi, porro ratione magni pariatur accusantium quibusdam illo hic quod voluptate laborum. Nobis, facilis.
+                    </p>
+                </div>
+                <div class="box box-3">
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                   <h1>Experience</h1>
+                   <p>The outline of a personal experience essay follows the common structure for all the essays. Your essay on experience starts with an intro, then the main body and finally summing up the ideas in the conclusion. Try and describe the events and experiences in the chronological order in, as it allows you to present experiences as they happened.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque aperiam voluptates cupiditate consectetur. Suscipit beatae, est vel tenetur, saepe illum voluptatum quisquam, voluptatibus voluptates officia cumque laborum laboriosam. Itaque.
+                   </p>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <footer class="footer">
+          <div class="social">
+              <i class="fab fa-facebook fa-4x"></i>
+              <i class="fab fa-twitter fa-4x"></i>
+              <i class="fab fa-instagram fa-4x"></i>
+          </div>
+          <p>World travel copy&; All right reserved</p>
+    </footer>
+</body>
+</html>
